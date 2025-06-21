@@ -1,8 +1,10 @@
 # 微信自动管理插件 WeChatAutoManager
 
-![Version](https://img.shields.io/badge/版本-v1.0-blue) ![Platform](https://img.shields.io/badge/平台-WAuxiliary-green) ![Language](https://img.shields.io/badge/语言-Java-orange) ![API](https://img.shields.io/badge/API-v1.2.3.r722.c2ba115-red)
+![Version](https://img.shields.io/badge/版本-v1.0.1-blue) ![Platform](https://img.shields.io/badge/平台-WAuxiliary-green) ![Language](https://img.shields.io/badge/语言-Java-orange) ![API](https://img.shields.io/badge/API-v1.2.3.r722.c2ba115-red)
 
-一个功能完整的微信自动化管理插件，基于WAuxiliary框架开发，集成了好友管理、群邀请、群提示和状态监控四大核心功能，具备完整的群人员监控和智能日志系统。
+一个功能完整的微信自动化管理插件，基于[WAuxiliary](https://github.com/HdShare/WAuxiliary_Public)框架开发，集成了好友管理、群邀请、群提示和状态监控四大核心功能，具备完整的群人员监控和智能日志系统。
+
+> 🎯 **框架说明**: 本插件基于[WAuxiliary](https://github.com/HdShare/WAuxiliary_Public)微信辅助框架开发，WAuxiliary是一个强大的微信Xposed模块，为微信提供了丰富的API接口和插件开发能力。
 
 ## 🚀 核心功能
 
@@ -48,9 +50,10 @@
 ## 📦 安装配置
 
 ### 环境要求
-- **WAuxiliary**: v1.2.3.r722.c2ba115 或更高版本
+- **WAuxiliary框架**: v1.2.3.r722.c2ba115 或更高版本 ([下载地址](https://github.com/HdShare/WAuxiliary_Public/releases))
 - **Android系统**: 支持微信的Android设备
-- **微信版本**: 兼容主流微信版本
+- **微信版本**: 理论适配 8.0.33~8.0.60 国内与PLAY版本
+- **Xposed框架**: 需要已安装并激活Xposed或类似框架
 
 ### 快速安装
 
@@ -476,6 +479,7 @@ config.put("ENABLE_DETAILED_LOG", true);  // 详细日志
 - **错误隔离**: 单个功能异常不影响其他功能
 
 ### 🔄 兼容性
+- **框架依赖**: 基于[WAuxiliary](https://github.com/HdShare/WAuxiliary_Public)框架开发
 - **API规范**: 完全符合WAuxiliary Plugin API v1.2.3.r722.c2ba115规范
 - **向前兼容**: 支持WAuxiliary v1.2.3及以上版本
 - **错误恢复**: 具备自动错误恢复机制
@@ -552,7 +556,8 @@ config.put("ENABLE_DETAILED_LOG", true);  // 详细日志
 
 ## 🙏 致谢
 
-- **WAuxiliary Team**: 提供强大的微信插件开发平台
+- **[WAuxiliary](https://github.com/HdShare/WAuxiliary_Public) 开发团队**: 提供强大的微信辅助框架和插件开发平台
+- **[HdShare](https://github.com/HdShare)**: WAuxiliary框架的主要开发者
 - **开源社区**: 提供技术支持和最佳实践
 - **所有用户**: 测试反馈和功能建议
 

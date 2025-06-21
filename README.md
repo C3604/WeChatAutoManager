@@ -99,20 +99,6 @@ config.put("LEFT_MESSAGE", "😢 {userName} 离开了群聊，我们会想念你
 ✅ 已发送提醒消息
 ```
 
-## 🔍 获取群组ID
-
-### 方法1: WAuxiliary控制台
-在目标群发送消息，查看控制台日志中的`talker: 群ID@chatroom`
-
-### 方法2: 临时调试
-```java
-void onHandleMsg(Object msgInfoBean) {
-    if (msgInfoBean.isGroupChat()) {
-        String groupId = msgInfoBean.getTalker();
-        sendText(msgInfoBean.getTalker(), "当前群ID: " + groupId);
-    }
-}
-```
 
 ### 方法3: /info命令
 在日志群输入`/info`查看群组配置信息
@@ -133,8 +119,8 @@ void onHandleMsg(Object msgInfoBean) {
 
 ## 📝 版本历史
 
-### v1.0.2 (2025-01-01)
-- 🔧 日志系统优化：汇总日志模式，减少75-85%日志数量
+### v1.0.2
+- 🔧 日志系统优化：汇总日志模式，减少日志数量
 - 📊 每类操作仅输出一条完整汇总日志
 - ⚡ 性能提升，降低信息噪音
 - 🔄 代码重构，移除冗余日志方法
